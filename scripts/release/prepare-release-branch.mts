@@ -25,7 +25,13 @@ const configuredRoot = process.env.RELEASE_ROOT;
 const repoRoot = configuredRoot
     ? path.resolve(configuredRoot)
     : path.resolve(currentDir, "..", "..");
-const preservedEntries = new Set([".git", "bin", "LICENSE", "package.json"]);
+const preservedEntries = new Set([
+    ".git",
+    "bin",
+    "CHANGELOG.md",
+    "LICENSE",
+    "package.json"
+]);
 
 function isTemporaryRoot(target: string): boolean {
     const resolvedTarget = realpathSync(target);
@@ -70,7 +76,7 @@ function assertSafeContext(): void {
 }
 
 async function assertRequiredEntries(): Promise<void> {
-    const requiredEntries = ["bin", "LICENSE", "package.json"];
+    const requiredEntries = ["bin", "CHANGELOG.md", "LICENSE", "package.json"];
 
     for (const entry of requiredEntries) {
         const stat = await fs

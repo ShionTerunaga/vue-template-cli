@@ -19,7 +19,7 @@ export function getReleaseNotes(
     const changelog = fs.readFileSync(changelogPath, "utf8");
     const escapedVersion = version.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
     const sectionPattern = new RegExp(
-        `^## ${escapedVersion}\\n([\\s\\S]*?)(?=^## |\\Z)`,
+        `^## ${escapedVersion}\\n([\\s\\S]*?)(?=^## |(?![\\s\\S]))`,
         "m"
     );
     const match = changelog.match(sectionPattern);
