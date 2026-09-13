@@ -1,5 +1,13 @@
 # create-vue-template
 
+## 0.1.1
+
+### Patch Changes
+
+- [`c8f1e5f`](https://github.com/ShionTerunaga/vue-template-cli/commit/c8f1e5f7573c0e599992f1652c3d3387f3be81dc)
+  Thanks [@ShionTerunaga](https://github.com/ShionTerunaga)! - fixed repository
+  name
+
 ## 0.1.0
 
 ### Minor Changes
