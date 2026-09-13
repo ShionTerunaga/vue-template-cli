@@ -6,7 +6,7 @@ import {
 } from "ts-utility-kit/result";
 
 const REPOSITORY_OWNER = "ShionTerunaga";
-const REPOSITORY_NAME = "react-template-cli";
+const REPOSITORY_NAME = "vue-template-cli";
 const GITHUB_API_BASE = "https://api.github.com";
 
 function normalizeVersion(tagName: string): string {
