@@ -1,4 +1,4 @@
-# Create React Template CLI
+# Create Vue Template CLI
 
 Frontend template generation CLI.
 
