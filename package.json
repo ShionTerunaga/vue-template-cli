@@ -24,8 +24,8 @@
         "lint": "pnpm exec oxlint src scripts vite.config.ts --fix",
         "lint:check": "pnpm exec oxlint src scripts vite.config.ts",
         "lint:fix": "pnpm exec oxlint src scripts vite.config.ts --fix",
-        "version-packages": "changeset version",
-        "release:pr": "changeset version",
+        "version-packages": "changeset version && pnpm format",
+        "release:pr": "pnpm version-packages",
         "prepare:release-branch": "node scripts/release/prepare-release-branch.mts",
         "test:e2e": "pnpm build && cd test/auto && UV_CACHE_DIR=../../.tmp/uv uv sync && UV_CACHE_DIR=../../.tmp/uv uv run main.py"
     },

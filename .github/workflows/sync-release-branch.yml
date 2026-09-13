@@ -51,7 +51,6 @@ jobs:
               run: |
                   git fetch origin main
                   git checkout -B release origin/main
-                  pnpm format
                   PREPARE_RELEASE_BRANCH=1 pnpm prepare:release-branch
                   git add --all
                   git commit -m "chore: prepare release branch"
