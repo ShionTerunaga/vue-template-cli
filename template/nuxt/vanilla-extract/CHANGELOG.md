@@ -4,13 +4,16 @@
 
 ### Minor Changes
 
-- [`f890183`](https://github.com/ShionTerunaga/frontend-template/commit/f8901831ffa0b1aa509f137fc189846f550eb058) Thanks [@ShionTerunaga](https://github.com/ShionTerunaga)! - Upgrade Nuxt4.5
+- [`f890183`](https://github.com/ShionTerunaga/frontend-template/commit/f8901831ffa0b1aa509f137fc189846f550eb058)
+  Thanks [@ShionTerunaga](https://github.com/ShionTerunaga)! - Upgrade Nuxt4.5
 
 ## 6.1.0
 
 ### Minor Changes
 
-- [`cd4228c`](https://github.com/ShionTerunaga/frontend-template/commit/cd4228c49d4ae0f975d4d8bab733fcc33641cdc6) Thanks [@ShionTerunaga](https://github.com/ShionTerunaga)! - I omitted `expect` for statements containing `assert`.
+- [`cd4228c`](https://github.com/ShionTerunaga/frontend-template/commit/cd4228c49d4ae0f975d4d8bab733fcc33641cdc6)
+  Thanks [@ShionTerunaga](https://github.com/ShionTerunaga)! - I omitted
+  `expect` for statements containing `assert`.
 
 ## 6.0.2
 
@@ -24,8 +27,8 @@
 
 - 9ad1482: author: @ShionTerunaga
 
-  Resolving Issues with Launching Storybook and Starting the Nuxt Development
-  Server
+    Resolving Issues with Launching Storybook and Starting the Nuxt Development
+    Server
 
 ## 6.0.0
 

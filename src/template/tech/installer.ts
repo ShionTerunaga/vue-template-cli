@@ -5,23 +5,23 @@ import type { TechMaterial } from "../core/core-static";
 import { typescriptTemplateInstall } from "../common/typescript-template-install";
 
 export async function installApp({
-  appPath,
-  material,
+    appPath,
+    material
 }: {
-  appPath: string;
-  material: TechMaterial;
+    appPath: string;
+    material: TechMaterial;
 }): Promise<Result<Unit, Error>> {
-  const { styleSheet } = material;
-  const root = resolve(appPath);
-  const appName = basename(appPath);
+    const { styleSheet } = material;
+    const root = resolve(appPath);
+    const appName = basename(appPath);
 
-  if (isNone(styleSheet)) {
-    return createErr(new Error("CSS option is required"));
-  }
+    if (isNone(styleSheet)) {
+        return createErr(new Error("CSS option is required"));
+    }
 
-  return await typescriptTemplateInstall({
-    root,
-    appName,
-    material,
-  });
+    return await typescriptTemplateInstall({
+        root,
+        appName,
+        material
+    });
 }

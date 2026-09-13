@@ -9,29 +9,29 @@ import type { TechMaterial } from "../core/core-static";
 import { foundFolder } from "@/utils/found-file";
 
 export async function resolveTemplate(): Promise<Result<TechMaterial, Error>> {
-  const cliDir = path.dirname(fileURLToPath(import.meta.url));
-  const frameworkResult = await selectFramework(await optionFramework);
+    const cliDir = path.dirname(fileURLToPath(import.meta.url));
+    const frameworkResult = await selectFramework(await optionFramework);
 
-  if (isErr(frameworkResult)) {
-    return frameworkResult;
-  }
+    if (isErr(frameworkResult)) {
+        return frameworkResult;
+    }
 
-  const cssResult = await selectCss(await optionCss);
+    const cssResult = await selectCss(await optionCss);
 
-  if (isErr(cssResult)) {
-    return cssResult;
-  }
+    if (isErr(cssResult)) {
+        return cssResult;
+    }
 
-  const resultPath = foundFolder([
-    path.join(cliDir, "template", frameworkResult.value, cssResult.value),
-  ]);
+    const resultPath = foundFolder([
+        path.join(cliDir, "template", frameworkResult.value, cssResult.value)
+    ]);
 
-  if (isErr(resultPath)) {
-    return resultPath;
-  }
+    if (isErr(resultPath)) {
+        return resultPath;
+    }
 
-  return createOk({
-    path: resultPath.value,
-    styleSheet: createSome(cssResult.value),
-  });
+    return createOk({
+        path: resultPath.value,
+        styleSheet: createSome(cssResult.value)
+    });
 }

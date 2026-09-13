@@ -1,14 +1,14 @@
-import { appTheme } from './theme';
+import { appTheme } from "./theme";
 
 export const textColor = {
-  textNormal: appTheme.textNormal,
-  textWhite: appTheme.white,
+    textNormal: appTheme.textNormal,
+    textWhite: appTheme.white
 } as const;
 
 export const backgroundColor = {
-  likeBlue: appTheme.likeBlue,
-  likeGreen: appTheme.likeGreen,
-  popupBackground: appTheme.popupBackground,
+    likeBlue: appTheme.likeBlue,
+    likeGreen: appTheme.likeGreen,
+    popupBackground: appTheme.popupBackground
 };
 
 export type TextTheme = keyof typeof textColor;

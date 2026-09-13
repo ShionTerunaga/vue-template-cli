@@ -1,7 +1,7 @@
 {
-  "$schema": "./node_modules/oxfmt/configuration_schema.json",
-  "ignorePatterns": ["package-lock.json", "pnpm-lock.yaml", "yarn.lock"],
-  "semi": true,
-  "singleQuote": true,
-  "printWidth": 100
+    "$schema": "./node_modules/oxfmt/configuration_schema.json",
+    "ignorePatterns": ["package-lock.json", "pnpm-lock.yaml", "yarn.lock"],
+    "semi": true,
+    "singleQuote": true,
+    "printWidth": 100
 }
