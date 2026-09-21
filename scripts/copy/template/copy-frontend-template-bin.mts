@@ -19,7 +19,12 @@ const ignoredDirectoryNames = new Set([
     "out",
     "storybook-static"
 ]);
-const ignoredFileNames = new Set([".DS_Store", "count.txt", "next-env.d.ts"]);
+const ignoredFileNames = new Set([
+    ".DS_Store",
+    "count.txt",
+    "next-env.d.ts",
+    "CHANGELOG.md"
+]);
 
 function shouldIgnoreFile(name: string): boolean {
     return (
