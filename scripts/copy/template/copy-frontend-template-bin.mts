@@ -56,7 +56,12 @@ function copyDir(src: string, dest: string): void {
         }
 
         const srcPath = path.join(src, entry.name);
-        const destName = entry.name === ".env" ? "env" : entry.name;
+        const destName =
+            entry.name === ".env"
+                ? "env"
+                : entry.name === ".gitignore"
+                  ? "gitignore"
+                  : entry.name;
         const destPath = path.join(dest, destName);
 
         if (entry.isDirectory()) {
