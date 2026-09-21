@@ -31,7 +31,7 @@
     },
     "dependencies": {
         "@clack/prompts": "^0.11.0",
-        "@commitlint/cli": "^19.8.1",
+        "@commitlint/cli": "^21.2.3",
         "@commitlint/config-conventional": "^19.8.1",
         "@types/adm-zip": "^0.5.7",
         "commander": "^14.0.2",
@@ -45,7 +45,7 @@
     },
     "devDependencies": {
         "@changesets/changelog-github": "^0.5.1",
-        "@changesets/cli": "^2.29.7",
+        "@changesets/cli": "^3.0.3",
         "@tsconfig/node26": "^26.0.1",
         "@types/conf": "^3.0.3",
         "@types/node": "^26.5.0",
@@ -56,7 +56,7 @@
         "assert": "^2.1.0",
         "browserify-zlib": "^0.2.0",
         "buffer": "^6.0.3",
-        "copy-webpack-plugin": "^13.0.1",
+        "copy-webpack-plugin": "^14.0.0",
         "find-packages": "^10.0.4",
         "oxfmt": "^0.43.0",
         "oxlint": "^1.58.0",
