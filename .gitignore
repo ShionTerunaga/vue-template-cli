@@ -1,8 +1,0 @@
-node_modules
-.turbo
-.pnpm-store
-dist
-coverage
-.reports
-bin
-.tmp
