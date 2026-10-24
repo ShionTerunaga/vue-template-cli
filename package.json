@@ -65,7 +65,7 @@
         "ts-loader": "^9.5.4",
         "tsconfig-paths": "^4.2.0",
         "typescript": "^7.0.2",
-        "vite": "^8.3.3"
+        "vite": "^8.3.5"
     },
     "preferGlobal": true,
     "engines": {
