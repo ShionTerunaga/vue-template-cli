@@ -8,12 +8,12 @@ import type { FetcherError } from "@/shared/error/fetcher";
 import type { Option } from "ts-utility-kit/option";
 
 export async function getCharacter(
-    cache?: RequestCache
+  cache?: RequestCache,
 ): Promise<Result<Option<Array<APIView>>, FetcherError>> {
-    return await hasParseFetcher({
-        url: appConfig.apiKey,
-        scheme: APIScheme,
-        cache,
-        parse: parseApi
-    });
+  return await hasParseFetcher({
+    url: appConfig.apiKey,
+    scheme: APIScheme,
+    cache,
+    parse: parseApi,
+  });
 }

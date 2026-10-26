@@ -7,10 +7,10 @@ import { vanillaExtractPlugin } from "@vanilla-extract/vite-plugin";
 
 // https://vite.dev/config/
 export default defineConfig({
-    plugins: [vue(), vueDevTools(), vanillaExtractPlugin()],
-    resolve: {
-        alias: {
-            "@": fileURLToPath(new URL("./src", import.meta.url))
-        }
-    }
+  plugins: [vue(), vueDevTools(), vanillaExtractPlugin()],
+  resolve: {
+    alias: {
+      "@": fileURLToPath(new URL("./src", import.meta.url)),
+    },
+  },
 });

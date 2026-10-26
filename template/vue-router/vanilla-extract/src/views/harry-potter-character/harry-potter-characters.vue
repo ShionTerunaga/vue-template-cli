@@ -9,23 +9,23 @@ const { isLoading, characters, error } = useGetCharacters();
 </script>
 
 <template>
-    <main>
-        <h1 :class="titleStyles">{{ ja.app.harryPotter.title }}</h1>
+  <main>
+    <h1 :class="titleStyles">{{ ja.app.harryPotter.title }}</h1>
 
-        <p v-if="isLoading">Loading...</p>
-        <p v-else-if="isSome(error)">Error: {{ error.value.message }}</p>
+    <p v-if="isLoading">Loading...</p>
+    <p v-else-if="isSome(error)">Error: {{ error.value.message }}</p>
 
-        <div v-else-if="isSome(characters)" :class="gridBoxBaseStyles">
-            <Card
-                v-for="character in characters.value"
-                :key="character.id"
-                :title="character.name"
-                :src="character.image"
-                :alt="character.name"
-                :boxHeight="300"
-                :srcWidth="150"
-                :srcHeight="200"
-            />
-        </div>
-    </main>
+    <div v-else-if="isSome(characters)" :class="gridBoxBaseStyles">
+      <Card
+        v-for="character in characters.value"
+        :key="character.id"
+        :title="character.name"
+        :src="character.image"
+        :alt="character.name"
+        :boxHeight="300"
+        :srcWidth="150"
+        :srcHeight="200"
+      />
+    </div>
+  </main>
 </template>

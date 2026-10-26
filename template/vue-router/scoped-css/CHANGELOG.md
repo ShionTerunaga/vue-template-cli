@@ -20,8 +20,8 @@
 
 - 9ad1482: author: @ShionTerunaga
 
-    Resolving Issues with Launching Storybook and Starting the Nuxt Development
-    Server
+  Resolving Issues with Launching Storybook and Starting the Nuxt Development
+  Server
 
 ## 6.0.0
 
