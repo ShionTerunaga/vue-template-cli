@@ -7,12 +7,10 @@ import { pokemonApiScheme } from "../model/model-res";
 import type { PokemonView } from "../model/model-view";
 import { parsePokemonApi } from "./parse-api";
 
-export async function getPokemon(): Promise<
-    Result<Option<Array<PokemonView>>, FetcherError>
-> {
-    return await hasParseFetcher({
-        url: appConfig.pokemonApiUrl,
-        scheme: pokemonApiScheme,
-        parse: parsePokemonApi
-    });
+export async function getPokemon(): Promise<Result<Option<Array<PokemonView>>, FetcherError>> {
+  return await hasParseFetcher({
+    url: appConfig.pokemonApiUrl,
+    scheme: pokemonApiScheme,
+    parse: parsePokemonApi,
+  });
 }

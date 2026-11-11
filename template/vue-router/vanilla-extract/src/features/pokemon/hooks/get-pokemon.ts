@@ -6,21 +6,21 @@ import type { PokemonView } from "../model/model-view";
 import { getPokemon } from "../service/get-pokemon";
 
 export function useGetPokemon() {
-    const pokemon = ref<Option<Array<PokemonView>>>(createNone());
-    const isLoading = ref(true);
-    const error = ref<Option<FetcherError>>(createNone());
+  const pokemon = ref<Option<Array<PokemonView>>>(createNone());
+  const isLoading = ref(true);
+  const error = ref<Option<FetcherError>>(createNone());
 
-    onMounted(async () => {
-        const response = await getPokemon();
+  onMounted(async () => {
+    const response = await getPokemon();
 
-        if (isErr(response)) {
-            error.value = createSome(response.err);
-        } else {
-            pokemon.value = response.value;
-        }
+    if (isErr(response)) {
+      error.value = createSome(response.err);
+    } else {
+      pokemon.value = response.value;
+    }
 
-        isLoading.value = false;
-    });
+    isLoading.value = false;
+  });
 
-    return { pokemon, isLoading, error };
+  return { pokemon, isLoading, error };
 }
