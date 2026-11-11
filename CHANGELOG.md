@@ -1,5 +1,17 @@
 # create-vue-template
 
+## 0.2.0
+
+### Minor Changes
+
+- [`877a4b7`](https://github.com/ShionTerunaga/vue-template-cli/commit/877a4b7f8064f1692f37207935bc6e0375a57726)
+  Thanks [@ShionTerunaga](https://github.com/ShionTerunaga)! - Add API
+
+### Patch Changes
+
+- [`6aae2a2`](https://github.com/ShionTerunaga/vue-template-cli/commit/6aae2a2ac10faf9337088f9bfa05284e26417530)
+  Thanks [@ShionTerunaga](https://github.com/ShionTerunaga)! - package upgrade
+
 ## 0.1.3
 
 ### Patch Changes
