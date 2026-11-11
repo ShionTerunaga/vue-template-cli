@@ -23,7 +23,7 @@
     "dependencies": {
         "@nuxt/image": "2.0.0",
         "jsdom": "^27.4.0",
-        "nuxt": "4.6.2",
+        "nuxt": "4.6.3",
         "simple-git": "^4.0.2",
         "ts-utility-kit": "2.1.1",
         "valibot": "^1.5.0",
