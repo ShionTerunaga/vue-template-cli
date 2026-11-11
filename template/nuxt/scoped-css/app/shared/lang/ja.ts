@@ -1,19 +1,21 @@
 export const ja = {
     app: {
         home: {
-            title: "Hello、Nuxt.js + vanilla-extract！",
-            toForceCacheHarryPotterLink: "force-cacheキャラクター一覧へ移動",
-            toNoStoreHarryPotterLink: "no-storeキャラクター一覧へ移動",
-            toDynamicHaryyPotterLink: "動的取得キャラクター一覧へ移動"
+            title: "テンプレートの種類について",
+            description:
+                "キャッシュ戦略と動的データ取得をこのテンプレートですぐ試せます。",
+            toPokemonForceCache: "PokeAPI の force-cache 取得例へ",
+            toPokemonNoStore: "PokeAPI の no-store 取得例へ",
+            toPokemonDynamicFetch: "PokeAPI の動的データ取得例へ"
         },
-        forceCacheCharacter: {
-            title: "ハリーポッターのキャラクター一覧（force-cache）"
+        pokemonForceCache: {
+            title: "PokeAPI の force-cache によるデータ取得"
         },
-        noStoreCharacter: {
-            title: "ハリーポッターのキャラクター一覧（no-store）"
+        pokemonNoStore: {
+            title: "PokeAPI の no-store によるデータ取得"
         },
-        dynamicCharacter: {
-            title: "ハリーポッターのキャラクター一覧（dynamic）"
+        pokemonDynamicFetch: {
+            title: "PokeAPI による動的なデータ取得"
         }
     }
 };

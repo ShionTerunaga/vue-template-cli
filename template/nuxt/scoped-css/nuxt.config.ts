@@ -12,7 +12,8 @@ export default {
 
     runtimeConfig: {
         public: {
-            NUXT_PUBLIC_API_KEY: process.env.NUXT_PUBLIC_API_KEY
+            NUXT_PUBLIC_API_KEY: process.env.NUXT_PUBLIC_API_KEY,
+            NUXT_PUBLIC_POKEMON_API_URL: process.env.NUXT_PUBLIC_POKEMON_API_URL
         }
     },
 

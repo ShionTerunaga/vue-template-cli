@@ -26,7 +26,9 @@ const templateEnvSchema = [
             ["nuxt", "vanilla-extract"]
         ],
         variables: {
-            NUXT_PUBLIC_API_KEY: "https://hp-api.onrender.com/api/characters"
+            NUXT_PUBLIC_API_KEY: "https://hp-api.onrender.com/api/characters",
+            NUXT_PUBLIC_POKEMON_API_URL:
+                "https://pokeapi.co/api/v2/pokemon?limit=20"
         }
     },
     {
@@ -35,7 +37,8 @@ const templateEnvSchema = [
             ["vue-router", "vanilla-extract"]
         ],
         variables: {
-            VITE_API_KEY: "https://hp-api.onrender.com/api/characters"
+            VITE_API_KEY: "https://hp-api.onrender.com/api/characters",
+            VITE_POKEMON_API_URL: "https://pokeapi.co/api/v2/pokemon?limit=20"
         }
     }
 ] as const;
